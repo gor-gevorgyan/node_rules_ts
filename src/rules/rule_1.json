@@ -1,0 +1,22 @@
+{
+  "conditions": {
+    "all": [
+      {
+        "fact": "previousFlightState",
+        "operator": "notEqual",
+        "value": "LANDED"
+      },
+      {
+        "fact": "newFlightState",
+        "operator": "equal",
+        "value": "LANDED"
+      }
+    ]
+  },
+  "event": {
+    "type": "isLanded",
+    "params": {
+      "message": "Flight {FLIGHT_NO} is landed"
+    }
+  }
+}

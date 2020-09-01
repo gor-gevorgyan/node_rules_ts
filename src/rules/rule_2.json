@@ -1,0 +1,17 @@
+{
+  "conditions": {
+    "all": [
+      {
+        "fact": "landedNotification",
+        "operator": "equal",
+        "value": true
+      }
+    ]
+  },
+  "event": {
+    "type": "newGate",
+    "params": {
+      "message": "Your new gate is {GATE}"
+    }
+  }
+}
